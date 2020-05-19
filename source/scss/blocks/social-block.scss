@@ -17,7 +17,8 @@
   height: 4rem;
   color: $c-dark;
   border-radius: 50%;
-  transition: color 0.4s ease;
+  transform: scale(0);
+  transition: color 0.4s ease, transform 0.4s ease;
 
   @media (max-width: $tablet) and (orientation: portrait) {
     display: none;
@@ -81,6 +82,10 @@
       border-color: $c-purple;
     }
   }
+}
+
+.body-loaded .social-block__toggler {
+  transform: scale(1);
 }
 
 .social-block__list {
