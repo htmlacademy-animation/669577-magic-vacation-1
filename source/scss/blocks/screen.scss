@@ -314,6 +314,7 @@
 
 .screen--game {
   position: relative;
+  background-color: $c-dark;
 
   &::before {
     content: "";
@@ -347,6 +348,7 @@
   bottom: 0;
   left: 0;
   right: 0;
+  background-color: $c-dark;
   opacity: 0;
   pointer-events: none;
 
@@ -354,4 +356,8 @@
     opacity: 1;
     pointer-events: auto;
   }
+}
+
+.screen--rules {
+  background-color: $c-dark;
 }
