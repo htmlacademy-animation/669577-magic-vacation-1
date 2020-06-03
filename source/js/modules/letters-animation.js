@@ -1,5 +1,5 @@
 export default class LettersAnimation {
-  constructor(selector, { duration, classForActivate, property, delay }) {
+  constructor(selector, {duration, classForActivate, property, delay}) {
     this.element = document.querySelector(selector);
     this.duration = duration;
     this.classForActivate = classForActivate;
