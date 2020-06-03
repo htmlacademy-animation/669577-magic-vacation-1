@@ -170,3 +170,21 @@
     font-size: 48px;
   }
 }
+
+.text__word {
+  display: inline-block;
+  margin: 0 5px;
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow-y: hidden;
+}
+
+.text__word > span {
+  display: inline-block;
+  transform: translate3d(0, 1.2em, 0);
+}
+
+.intro__title.active .text__word > span,
+.intro__date.active .text__word > span {
+  transform: translate3d(0, 0, 0);
+}
