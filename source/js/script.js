@@ -9,6 +9,7 @@ import result from './modules/result.js';
 import form from './modules/form.js';
 import social from './modules/social.js';
 import FullPageScroll from './modules/full-page-scroll';
+import LettersAnimation from './modules/letters-animation';
 
 // init modules
 bodyLoaded();
@@ -23,3 +24,22 @@ social();
 
 const fullPageScroll = new FullPageScroll();
 fullPageScroll.init();
+
+const sloganAnimation = new LettersAnimation(`.intro__title`, {
+  duration: 200,
+  classForActivate: `active`,
+  property: `transform`,
+  delay: 0
+});
+
+const dateAnimation = new LettersAnimation(`.intro__date`, {
+  duration: 200,
+  classForActivate: `active`,
+  property: `transform`,
+  delay: 500
+});
+
+setTimeout(() => {
+  sloganAnimation.runAnimation();
+  dateAnimation.runAnimation();
+}, 500);
