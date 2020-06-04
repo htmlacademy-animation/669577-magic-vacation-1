@@ -163,6 +163,19 @@
   height: 4rem;
   color: $c-dark;
 
+  animation-duration: 0.6s;
+  animation-delay: 0.5s;
+  animation-timing-function: cubic-bezier(0.2, 0.5, 0.3, 1.4);
+  animation-fill-mode: both;
+
+  &--prev {
+    animation-name: fadeInRotateLeft;
+  }
+
+  &--next {
+    animation-name: fadeInRotateRight;
+  }
+
   @media (min-width: $stop-scaling) {
     width: 40px;
     height: 40px;
