@@ -57,3 +57,27 @@
     transform-origin: right;
   }
 }
+
+@keyframes fadeInRotateLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-5rem) rotate(-90deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0) rotate(0);
+  }
+}
+
+@keyframes fadeInRotateRight {
+  0% {
+    opacity: 0;
+    transform: translateX(5rem) rotate(90deg);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0) rotate(0);
+  }
+}
